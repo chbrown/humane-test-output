@@ -8,4 +8,3 @@
 
 (defn ^:export run []
   (run-all-tests #"humane-test-output.test.*-test"))
-

@@ -23,4 +23,3 @@
 
 #?(:clj (defmethod assert-expr 'clojure.core/= [menv msg [_ a & more]]
           (=-body msg a more)))
-

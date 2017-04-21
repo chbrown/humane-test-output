@@ -7,5 +7,3 @@
 
 (defn do-report [& args]
   #?(:cljs (apply cljs.test/do-report args)))
-
-
