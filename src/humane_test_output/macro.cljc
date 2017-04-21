@@ -1,4 +1,4 @@
-(ns pjstadig.macro
+(ns humane-test-output.macro
   (:require #?(:cljs [cljs.test])
             [clojure.data :as data :include-macros true]))
 

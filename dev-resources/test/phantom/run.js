@@ -21,7 +21,7 @@ page.open(url, function (status) {
   }
 
   var exitStatus = page.evaluate(function() {
-    pjstadig.run_all.run();
+    humane_test_output.run_all.run();
 
     return window.testStatus;
   });

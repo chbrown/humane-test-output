@@ -1,9 +1,9 @@
 
-lein test pjstadig.humane-test-output.formatting-test
+lein test humane-test-output.test.formatting-test
 
-lein test :only pjstadig.humane-test-output.formatting-test/t-formatting
+lein test :only humane-test-output.test.formatting-test/t-formatting
 
-FAIL in (t-formatting) (formatting_test.cljc:12)
+FAIL in (t-formatting) (formatting_test.cljc:15)
 THESE TESTS ARE INTENDED TO FAIL
 expected: {:foo :bar,
            :baz :quux,
@@ -16,9 +16,9 @@ expected: {:foo :bar,
              :another-key "and another value"}
           + {:fo :bar}
 
-lein test :only pjstadig.humane-test-output.formatting-test/t-formatting
+lein test :only humane-test-output.test.formatting-test/t-formatting
 
-FAIL in (t-formatting) (formatting_test.cljc:15)
+FAIL in (t-formatting) (formatting_test.cljc:18)
 THESE TESTS ARE INTENDED TO FAIL
 expected: {:foo :bar,
            :baz :quux,
@@ -29,9 +29,9 @@ expected: {:foo :bar,
              :something "a long string?",
              :another-key "and another value"}
 
-lein test :only pjstadig.humane-test-output.formatting-test/t-formatting
+lein test :only humane-test-output.test.formatting-test/t-formatting
 
-FAIL in (t-formatting) (formatting_test.cljc:18)
+FAIL in (t-formatting) (formatting_test.cljc:21)
 THESE TESTS ARE INTENDED TO FAIL
 expected: {:foo :bar}
   actual: {:foo :bar,
@@ -42,9 +42,9 @@ expected: {:foo :bar}
              :something "a long string?",
              :another-key "and another value"}
 
-lein test :only pjstadig.humane-test-output.formatting-test/t-formatting
+lein test :only humane-test-output.test.formatting-test/t-formatting
 
-FAIL in (t-formatting) (formatting_test.cljc:21)
+FAIL in (t-formatting) (formatting_test.cljc:24)
 THESE TESTS ARE INTENDED TO FAIL
 expected: {:foo :bar, :baz :quux}
   actual: {:foo :bar, :baz :quux}
@@ -57,9 +57,9 @@ expected: {:foo :bar, :baz :quux}
     diff: - {:foo :bar}
           + {:fo :bar}
 
-lein test :only pjstadig.humane-test-output.formatting-test/t-formatting
+lein test :only humane-test-output.test.formatting-test/t-formatting
 
-FAIL in (t-formatting) (formatting_test.cljc:25)
+FAIL in (t-formatting) (formatting_test.cljc:28)
 THESE TESTS ARE INTENDED TO FAIL
 expected: (list? foo)
   actual: (not
@@ -69,39 +69,39 @@ expected: (list? foo)
              :something "a long string?",
              :another-key "and another value"}))
 
-lein test :only pjstadig.humane-test-output.formatting-test/t-macro-wrapping
+lein test :only humane-test-output.test.formatting-test/t-macro-wrapping
 
-FAIL in (t-macro-wrapping) (formatting_test.cljc:27)
+FAIL in (t-macro-wrapping) (formatting_test.cljc:30)
 THIS ONE SHOULD ALSO FAIL
 expected: 1
   actual: 2
     diff: - 1
           + 2
 
-lein test pjstadig.humane-test-output.records-test
+lein test humane-test-output.test.records-test
 
-lein test :only pjstadig.humane-test-output.records-test/t-records
+lein test :only humane-test-output.test.records-test/t-records
 
 FAIL in (t-records) (records_test.cljc:11)
 THESE TESTS ARE INTENDED TO FAIL these should not print as plain maps
-expected: #pjstadig.humane_test_output.records_test.ARecord{:foo :foo}
-  actual: #pjstadig.humane_test_output.records_test.ARecord{:foo :bar}
+expected: #humane_test_output.test.records_test.ARecord{:foo :foo}
+  actual: #humane_test_output.test.records_test.ARecord{:foo :bar}
     diff: - {:foo :foo}
           + {:foo :bar}
 
-lein test :only pjstadig.humane-test-output.records-test/t-records
+lein test :only humane-test-output.test.records-test/t-records
 
 FAIL in (t-records) (records_test.cljc:13)
 THESE TESTS ARE INTENDED TO FAIL there should be a diff here
-expected: #pjstadig.humane_test_output.records_test.ARecord{:foo :foo}
+expected: #humane_test_output.test.records_test.ARecord{:foo :foo}
   actual: {:foo :foo}
 
-lein test :only pjstadig.humane-test-output.records-test/t-records
+lein test :only humane-test-output.test.records-test/t-records
 
 FAIL in (t-records) (records_test.cljc:15)
 THESE TESTS ARE INTENDED TO FAIL and here
-expected: #pjstadig.humane_test_output.records_test.ARecord{:foo :foo}
-  actual: #pjstadig.humane_test_output.records_test.BRecord{:foo :foo}
+expected: #humane_test_output.test.records_test.ARecord{:foo :foo}
+  actual: #humane_test_output.test.records_test.BRecord{:foo :foo}
 
 Ran 3 tests containing 9 assertions.
 9 failures, 0 errors.

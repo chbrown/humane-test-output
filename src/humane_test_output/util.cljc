@@ -1,4 +1,4 @@
-(ns pjstadig.util
+(ns humane-test-output.util
   #?(:clj (:use [clojure.test]))
   (:require #?@(:clj  [[clojure.pprint :as pp]]
                 :cljs [[cljs.pprint :as pp :include-macros true]

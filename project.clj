@@ -1,6 +1,6 @@
-(defproject pjstadig/humane-test-output "0.8.2-SNAPSHOT"
+(defproject chbrown/humane-test-output "0.8.3"
   :description "Humane test output for clojure.test"
-  :url "http://github.com/pjstadig/humane-test-output/"
+  :url "http://github.com/chbrown/humane-test-output"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :deploy-repositories [["releases" :clojars]]
@@ -15,10 +15,10 @@
                    :cljsbuild {:test-commands {"test" ["phantomjs" "dev-resources/test/phantom/run.js" "dev-resources/test/test.html"]}
                                :builds [{:id "test"
                                          :source-paths ["src" "test"]
-                                         :compiler {:main pjstadig.run-all
+                                         :compiler {:main humane-test-output.run-all
                                                     :asset-path "../../target/cljsbuild/js/compiled/test/out"
                                                     :output-to "target/cljsbuild/js/compiled/humanize-test-output-test.js"
                                                     :output-dir "target/cljsbuild/js/compiled/test/out"
                                                     :source-map-timestamp true}}]}}
-             :test {:injections [(require 'pjstadig.humane-test-output)
-                                 (pjstadig.humane-test-output/activate!)]}})
+             :test {:injections [(require 'humane-test-output.core)
+                                 (humane-test-output.core/activate!)]}})

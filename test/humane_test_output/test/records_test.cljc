@@ -1,4 +1,4 @@
-(ns pjstadig.humane-test-output.records-test
+(ns humane-test-output.test.records-test
   #?(:clj  (:use [clojure.test])
      :cljs (:require-macros [cljs.test :refer [deftest testing is]])))
 

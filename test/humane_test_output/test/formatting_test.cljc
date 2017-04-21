@@ -1,8 +1,8 @@
-(ns pjstadig.humane-test-output.formatting-test
+(ns humane-test-output.test.formatting-test
   #?(:clj  (:use [clojure.test]
-                 [pjstadig.fixtures.macro])
+                 [humane-test-output.test.util])
      :cljs (:require-macros [cljs.test :refer [deftest testing is]]
-                            [pjstadig.fixtures.macro :refer [deftest+]])))
+                            [humane-test-output.test.util :refer [deftest+]])))
 
 (deftest t-nothing-to-see-here
   (is true "everything should be A-OK"))

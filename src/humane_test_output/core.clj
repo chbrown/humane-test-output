@@ -1,6 +1,6 @@
-(ns pjstadig.humane-test-output
+(ns humane-test-output.core
   (:use [clojure.test]
-        [pjstadig.util])
+        [humane-test-output.util])
   (:require [clojure.data :as data]
             [clojure.pprint :as pp]))
 

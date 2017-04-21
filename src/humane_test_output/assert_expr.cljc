@@ -1,6 +1,6 @@
-(ns pjstadig.assert-expr
+(ns humane-test-output.assert-expr
   #?(:clj (:require [cljs.test :refer [assert-expr]]
-                    [pjstadig.macro :as m])))
+                    [humane-test-output.macro :as m])))
 
 (defn =-body
   [msg a more]

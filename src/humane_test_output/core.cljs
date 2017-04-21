@@ -1,9 +1,9 @@
-(ns pjstadig.humane-test-output
+(ns humane-test-output.core
   (:require [cljs.test :refer-macros [run-all-tests run-tests]]
             [cljs.pprint :as pp]
-            [pjstadig.macro :refer [do-report]]
-            [pjstadig.util :as util])
-  (:require-macros [pjstadig.assert-expr]))
+            [humane-test-output.macro :refer [do-report]]
+            [humane-test-output.util :as util])
+  (:require-macros [humane-test-output.assert-expr]))
 
 (def pprint-map (get-method pp/simple-dispatch :map))
 

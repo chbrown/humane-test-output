@@ -17,13 +17,13 @@ I do not recommend using this with cider 0.11.0 or greater or with Cursive, or L
 
 ## Clojure
 
-To activate it you will need to call `pjstadig.humane-test-output/activate!`.
+To activate it you will need to call `humane-test-output.core/activate!`.
 The preferred way to do this with Leiningen is to use an injection in the :user profile in your `~/.lein/profiles.clj`:
 
 ```clojure
-{:user {:dependencies [[pjstadig/humane-test-output "0.8.1"]]
-        :injections [(require 'pjstadig.humane-test-output)
-                     (pjstadig.humane-test-output/activate!)]}}
+{:user {:dependencies [[chbrown/humane-test-output "0.8.3"]]
+        :injections [(require 'humane-test-output.core)
+                     (humane-test-output.core/activate!)]}}
 ```
 
 If you are on a mixed team and some members need to disable humane test output, they can define the `INHUMANE_TEST_OUTPUT` environment variable, though again it's better for each user to enable it in their own `~/.lein/profiles.clj`.
@@ -102,3 +102,5 @@ Distributed under the Eclipse Public License, the same as Clojure.
 I am grateful for design and implementation assistance from Bryce Covert.
 
 Thanks to Miloslav Nenadál for the ClojureScript implementation.
+
+Thanks to Paul Stadig for the upstream repo from which this is forked.
