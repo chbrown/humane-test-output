@@ -1,12 +1,5 @@
-/checkouts/
-/classes/
-/lib/
-/native/
-/target/
-/.lein-deps-sum
-/.lein-failures
-/.lein-repl-history
-/.nrepl-history
-/pom.xml
-*jar
-*.asc
+/target
+.lein-repl-history
+.lein-failures
+pom.xml
+pom.xml.asc
