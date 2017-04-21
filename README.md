@@ -1,5 +1,7 @@
 # Humane test output for clojure.test
 
+[![Clojars Project](https://img.shields.io/clojars/v/chbrown/humane-test-output.svg)](https://clojars.org/chbrown/humane-test-output)
+
 This library does two things:
 
 1. Test output is pretty printed.
